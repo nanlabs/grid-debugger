@@ -8,6 +8,8 @@ This is a tool for testing and debugging so it's recommended to install it using
 bower install https://github.com/nanlabs/grid-debugger --save-dev
 ```
 
+## [Live Demo](http://nanlabs.github.io/grid-debugger)
+
 ## Screenshots
 
 ### Fixed Container Grid
@@ -15,8 +17,6 @@ bower install https://github.com/nanlabs/grid-debugger --save-dev
 
 ### Fluid Container Grid
 ![screen shot 2015-02-25 at 10 42 26 am](https://cloud.githubusercontent.com/assets/876864/6371506/418d4568-bcdb-11e4-836d-3c5fe52303de.png)
-
-## Live Demo
 
 ## How to use it
 
