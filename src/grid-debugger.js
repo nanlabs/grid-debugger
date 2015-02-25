@@ -91,14 +91,13 @@ document.addEventListener('DOMContentLoaded', function() {
     _changeTo('container', 'container-fluid');
   }
 
-  // Init 
-  setupGridDebuggerStyles();
-  setupGrid();
-  setupButtons();
-  changeToFluidGrid();
-  changeToFixedGrid();
-
   window.gridDebugger = {
+    init: function () {
+      setupGridDebuggerStyles();
+      setupGrid();
+      setupButtons();
+      toggleShow();
+    },
     toggleShow: toggleShow,
     changeToFluidGrid: changeToFluidGrid,
     changeToFixedGrid: changeToFixedGrid
