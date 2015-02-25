@@ -13,7 +13,7 @@ bower install https://github.com/nanlabs/grid-debugger --save-dev
 Just add the script to your webpage and initialize the tool.
 
 ```javascript
-<script type="text/javascript" src="/src/grid-debugger.js"></script>
+<script type="text/javascript" src="/grid-debugger/dist/grid-debugger.min.js"></script>
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     gridDebugger.init();
@@ -28,9 +28,9 @@ Just Twitter Bootstrap styles. It doesn't need jQuery neither Twitter Bootstrap 
 
 ## API
 
-Public API exposed through window.gridDebugger object.
+Public API exposed through **window.gridDebugger** object.
 
-- **init**: Initializes the tool and display the buttons at the top of the page. It doesn't show the grid by default.
+- **init**: Initializes the tool and displays the buttons at the top of the page. It doesn't show the grid by default.
 - **toggleShow**: Shows/hides the grid.
-- **changeToFluidGrid**: Changes the grid to the fuild one. Using **.container** bootstrap class.
+- **changeToFluidGrid**: Changes the grid to the fluid one. Using **.container** bootstrap class.
 - **changeToFixedGrid**: Changes the grid to the fixed one. Using **.container-fluid** bootstrap class.
