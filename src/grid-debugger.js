@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     addCSSRule(sheet, "#grid-container" , "position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(201, 201, 201, .5);");
     addCSSRule(sheet, "#grid-debugger .container, #grid-debugger .container-fluid, #grid-debugger .row", "height: 100%; opacity: .5;");
     addCSSRule(sheet, "#grid-debugger .row > div", "opacity: .7; height: 100%; border: 1px solid yellow; background-image:linear-gradient(to bottom, rgba(240, 255, 40, 1) 0%, rgba(240, 255, 40, 1) 100%), linear-gradient(to bottom, rgba(240, 40, 40, 1) 0%, rgba(240, 40, 40, 1) 100%); background-clip: content-box, padding-box;");
-    addCSSRule(sheet, "#grid-debugger .btn-group", "position: fixed; top: 0");
+    addCSSRule(sheet, "#grid-debugger .btn-group", "position: fixed; top: 0; z-index: 99999;");
   }
 
   function setupGrid() {

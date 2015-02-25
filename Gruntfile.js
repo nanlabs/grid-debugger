@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     uglify: {
       build: {
         files: {
-          'dist/grin-debugger.min.js': 'src/grid-debugger.js'
+          'dist/grid-debugger.min.js': 'src/grid-debugger.js'
         }
       }
     }
