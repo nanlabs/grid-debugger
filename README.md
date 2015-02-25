@@ -1,4 +1,4 @@
-# grid-debugger
+# Grid Debugger
 
 Tool for debugging bootstrap grid and its utilization in webpages. It displays a 12 columns grid highlighting borders, paddings (@grid-gutter-width variable in Twitter Bootstrap, default to 30px, 15px each side) and content.
 
