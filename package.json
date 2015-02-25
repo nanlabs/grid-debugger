@@ -1,0 +1,23 @@
+{
+  "name": "grid-debugger",
+  "version": "1.0.0",
+  "description": "Small lib for debugging bootstrap grid and its utilization in webpages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanlabs/grid-debugger.git"
+  },
+  "author": "Matias Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanlabs/grid-debugger/issues"
+  },
+  "homepage": "https://github.com/nanlabs/grid-debugger",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-connect": "^0.2.0"
+  }
+}
