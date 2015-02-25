@@ -5,7 +5,7 @@ Tool for debugging bootstrap grid and its utilization in webpages. It displays a
 This is a tool for testing and debugging so it's recommended to install it using the following command:
 
 ```
-bower install https://github.com/nanlabs/grid-debugger --save-dev
+bower install git@github.com:nanlabs/grid-debugger.git --save-dev
 ```
 
 ## [Live Demo](http://nanlabs.github.io/grid-debugger)
