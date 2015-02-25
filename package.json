@@ -1,6 +1,6 @@
 {
   "name": "grid-debugger",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Small lib for debugging bootstrap grid and its utilization in webpages.",
   "main": "index.js",
   "scripts": {
