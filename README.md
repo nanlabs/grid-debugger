@@ -16,7 +16,7 @@ bower install https://github.com/nanlabs/grid-debugger --save-dev
 ### Fluid Container Grid
 ![screen shot 2015-02-25 at 10 42 26 am](https://cloud.githubusercontent.com/assets/876864/6371506/418d4568-bcdb-11e4-836d-3c5fe52303de.png)
 
-## Live Demo
+## [Live Demo](http://nanlabs.github.io/grid-debugger)
 
 ## How to use it
 
