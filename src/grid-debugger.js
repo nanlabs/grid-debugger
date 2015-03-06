@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
 
   function createEl(type, id, className) {
     var e = document.createElement(type);
@@ -102,4 +102,5 @@ document.addEventListener('DOMContentLoaded', function() {
     changeToFluidGrid: changeToFluidGrid,
     changeToFixedGrid: changeToFixedGrid
   };
-});
+
+})();
