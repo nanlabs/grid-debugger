@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
 
   function createEl(type, id, className) {
     var e = document.createElement(type);
@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function setupGridDebuggerStyles() {
     var sheet = createStylesheet();
-    addCSSRule(sheet, "#grid-container" , "position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(201, 201, 201, .5);");
+    addCSSRule(sheet, "#grid-container" , "position: fixed; top: 0; left: 0; height: 100%; width: 100%;");
     addCSSRule(sheet, "#grid-debugger .container, #grid-debugger .container-fluid, #grid-debugger .row", "height: 100%; opacity: .5;");
     addCSSRule(sheet, "#grid-debugger .row > div", "opacity: .7; height: 100%; border: 1px solid yellow; background-image:linear-gradient(to bottom, rgba(240, 255, 40, 1) 0%, rgba(240, 255, 40, 1) 100%), linear-gradient(to bottom, rgba(240, 40, 40, 1) 0%, rgba(240, 40, 40, 1) 100%); background-clip: content-box, padding-box;");
-    addCSSRule(sheet, "#grid-debugger .btn-group", "position: fixed; top: 0");
+    addCSSRule(sheet, "#grid-debugger .btn-group", "position: fixed; top: 0; z-index: 99999;");
   }
 
   function setupGrid() {
@@ -60,9 +60,13 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleBtn = appendEl(btnGroup, 'button', null, 'btn btn-default glyphicon glyphicon-th'),
         fluidBtn = appendEl(btnGroup, 'button', null, 'btn btn-default glyphicon glyphicon-resize-full'),
         fixedBtn = appendEl(btnGroup, 'button', null, 'btn btn-default glyphicon glyphicon-resize-small');
+        frontBtn = appendEl(btnGroup, 'button', null, 'btn btn-default glyphicon glyphicon-chevron-up');
+        backBtn = appendEl(btnGroup, 'button', null, 'btn btn-default glyphicon glyphicon-chevron-down');
     toggleBtn.onclick = toggleShow;
     fluidBtn.onclick = changeToFluidGrid;
     fixedBtn.onclick = changeToFixedGrid;
+    frontBtn.onclick = bringToFront;
+    backBtn.onclick = bringToBack;
   }
 
   function _changeTo(from, to) {
@@ -91,6 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
     _changeTo('container', 'container-fluid');
   }
 
+  function bringToFront() {
+    document.getElementById('grid-container').style.zIndex = 100;
+  }
+
+  function bringToBack() {
+    document.getElementById('grid-container').style.zIndex = -100;
+  }
+
   window.gridDebugger = {
     init: function () {
       setupGridDebuggerStyles();
@@ -102,4 +114,5 @@ document.addEventListener('DOMContentLoaded', function() {
     changeToFluidGrid: changeToFluidGrid,
     changeToFixedGrid: changeToFixedGrid
   };
-});
+
+})();
